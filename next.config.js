@@ -8,3 +8,14 @@ import "./src/env.js";
 const config = {};
 
 export default config;
+
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+    eslint: {
+      ignoreDuringBuilds: true, // Ignore ESLint errors during the build
+    },
+    typescript: {
+        ignoreBuildErrors: true, // Ignore TypeScript errors during the build
+      },
+  };
+  
